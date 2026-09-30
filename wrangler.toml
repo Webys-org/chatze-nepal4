@@ -1,0 +1,22 @@
+name = "chatze-nepal4"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# 100% Free Cloudflare D1 Native Database (5 GB Free SQLite Edge DB)
+[[d1_databases]]
+binding = "DB"
+database_name = "chatze_db"
+database_id = "a2992385-6e36-4e53-8f12-8be2012a91c4"
+
+# Nightly 90-Day Retention Cron Trigger (Runs at 03:00 Kathmandu Time)
+[triggers]
+crons = ["0 3 * * *"]
+
+[vars]
+NODE_ENV = "production"
+PUBLIC_APP_URL = "https://chatze-nepal.workers.dev"
+
+[assets]
+directory = ".next"
+binding = "ASSETS"

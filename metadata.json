@@ -1,0 +1,8 @@
+{
+  "name": "Chatze Nepal Edition",
+  "description": "Zero-Setup Cloudflare Edge Architecture & High-Volume Business Messaging App for Nepal.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
